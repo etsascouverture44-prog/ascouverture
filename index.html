@@ -83,15 +83,17 @@ gap:25px;
 }
 
 .card{
-
 background:white;
-
 padding:30px;
-
 border-radius:15px;
-
 box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:all .35s ease;
+cursor:pointer;
+}
 
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,.2);
 }
 
 .card h3{
@@ -189,6 +191,60 @@ margin:auto;
 font-size:20px;
 line-height:1.8;
 color:#444;
+}
+@media (max-width:768px){
+
+nav{
+padding:12px 15px;
+}
+
+.logo img{
+height:40px;
+}
+
+nav{
+flex-wrap:wrap;
+gap:10px;
+}
+
+nav div:last-child{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+font-size:14px;
+margin-left:10px;
+}
+
+h1{
+font-size:42px;
+}
+
+h2{
+font-size:30px;
+}
+
+p{
+font-size:17px;
+}
+
+.btn{
+display:block;
+width:100%;
+max-width:300px;
+margin:12px auto;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.avantages{
+grid-template-columns:1fr 1fr;
+}
+
 }
 </style>
 
