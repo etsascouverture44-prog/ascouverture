@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://etsascouverture44-pro.github.io/ascouverture/sitemap.xml
