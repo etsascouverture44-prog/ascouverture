@@ -295,6 +295,50 @@ grid-template-columns:1fr;
 height:45px;
 margin:auto;
 }
+.galerie{
+padding:80px 20px;
+background:#f8f8f8;
+text-align:center;
+}
+
+.photos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.photo{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.35s;
+}
+
+.photo:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.photo img{
+width:100%;
+height:250px;
+object-fit:cover;
+display:block;
+transition:.35s;
+}
+
+.photo:hover img{
+transform:scale(1.05);
+}
+
+.photo p{
+padding:18px;
+font-weight:bold;
+font-size:18px;
+color:#00204a;
+}
 </style>
 
 </head>
@@ -438,7 +482,50 @@ Nous intervenons rapidement pour protéger, entretenir et rénover votre toiture
 </div>
 
 </section>
+<section class="galerie">
 
+<h2>Découvrez quelques-unes de nos interventions</h2>
+
+<div class="photos">
+
+<div class="photo">
+<img src="IMG_5241.jpeg" alt="Charpente">
+<p>Charpente</p>
+</div>
+
+<div class="photo">
+<img src="1E2E7989-E56E-4F0C-8226-5813DC0A92E5.png" alt="Remaniement de toiture">
+<p>Remaniement de toiture</p>
+</div>
+
+<div class="photo">
+<img src="IMG_4576.jpeg" alt="Installation de Velux">
+<p>Installation de Velux</p>
+</div>
+
+<div class="photo">
+<img src="IMG_1199.jpeg" alt="Hydrofuge coloré">
+<p>Hydrofuge coloré</p>
+</div>
+
+<div class="photo">
+<img src="IMG_5237.jpeg" alt="Zinguerie">
+<p>Zinguerie</p>
+</div>
+
+<div class="photo">
+<img src="IMG_4157.jpeg" alt="Nettoyage anti-mousse">
+<p>Nettoyage anti-mousse</p>
+</div>
+
+<div class="photo">
+<img src="245C7E15-8CF7-4709-81C9-2D871802A259.png" alt="Bac acier">
+<p>Remaniement de tôle bac acier</p>
+</div>
+
+</div>
+
+</section>
 <section>
 
 <h2>Contact</h2>
